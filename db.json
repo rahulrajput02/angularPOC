@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product001",
+      "cost": 10,
+      "quantity": 1000,
+      "locationId": 1,
+      "familyId": 1
+    },
+    {
+      "id": 2,
+      "name": "Product002",
+      "cost": 20,
+      "quantity": 2000,
+      "locationId": 1,
+      "familyId": 2
+    },
+    {
+      "id": 3,
+      "name": "Product003",
+      "cost": 30,
+      "quantity": 3000,
+      "locationId": 3,
+      "familyId": 2
+    },
+    {
+      "id": 4,
+      "name": "Product004",
+      "cost": 40,
+      "quantity": 4000,
+      "locationId": 2,
+      "familyId": 3
+    }
+  ],
+  "employeeTable": [
+    {
+      "emp_id": "101",
+      "name": "Rahul Rajput",
+      "designation": "Manager",
+      "salary": "2500000",
+      "retirementDate": "2019-05-25",
+      "status": "Active",
+      "id": 1
+    },
+    {
+      "emp_id": "102",
+      "name": "Rohit Chauhan",
+      "designation": "Developer",
+      "salary": "1500000",
+      "retirementDate": "2018-05-17",
+      "status": "In-Active",
+      "id": 2
+    },
+    {
+      "emp_id": "103",
+      "name": "Vishal Sharma",
+      "designation": "Senior Developer",
+      "salary": "3500000",
+      "retirementDate": "2019-05-09",
+      "status": "In-Active",
+      "id": 3
+    },
+    {
+      "emp_id": "104",
+      "name": "Shubham Sharma",
+      "designation": "Manager",
+      "salary": "8500000",
+      "retirementDate": "2019-05-25",
+      "status": "Active",
+      "id": 4
+    },
+    {
+      "emp_id": "105",
+      "name": "Parul Bhutani",
+      "designation": "Senior Developer",
+      "salary": "1500000",
+      "retirementDate": "2018-05-17",
+      "status": "In-Active",
+      "id": 5
+    },
+    {
+      "emp_id": "106",
+      "name": "Bhavna Kaushal",
+      "designation": "Trainee",
+      "salary": "250000",
+      "retirementDate": "2019-05-15",
+      "status": "Active",
+      "id": 6
+    }
+  ],
+  "families": [
+    {
+      "id": 1,
+      "name": "FM001"
+    },
+    {
+      "id": 2,
+      "name": "FM002"
+    },
+    {
+      "id": 3,
+      "name": "FM003"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "cost": 11,
+      "quantity": 10,
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "cost": 12,
+      "quantity": 100,
+      "productId": 2
+    },
+    {
+      "id": 3,
+      "cost": 15,
+      "quantity": 101,
+      "productId": 3
+    }
+  ],
+  "registeredUsers": [
+    {
+      "firstName": "Rahul",
+      "lastName": "Rajput",
+      "email": "rr@gmail.com",
+      "dob": "2019-05-03",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "firstName": "sfdsf",
+      "lastName": "sfsf",
+      "email": "sfs@sztse",
+      "dob": "2019-05-02",
+      "password": "stststst",
+      "id": 2
+    }
+  ]
+}

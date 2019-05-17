@@ -1,0 +1,73 @@
+<!-- main app container -->
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h3>Angular Reactive Form</h3><br>
+        <form [formGroup]="registerForm" (submit)="onSubmit()">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" formControlName="firstName" class="form-control" id="test"
+              [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+            <div *ngIf="submitted && f.firstName.errors" class="alert alert-danger">
+              <div *ngIf="f.firstName.errors.required">First Name is required</div>
+              <div *ngIf="f.firstName.errors.maxlength">First Name is too long</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" formControlName="lastName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+            <div *ngIf="submitted && f.lastName.errors" class="alert alert-danger">
+              <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+              <div *ngIf="f.lastName.errors.maxlength">Last Name is too long</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" formControlName="email" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="alert alert-danger">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+              <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="birthdate">Date of Birth : </label>
+            <input formControlName="dob" class="form-control" [max]="maxDate" type="date" name="birthdate"
+              id="birthdate">
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" formControlName="password" class="form-control" autocomplete="password"
+              [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            <div *ngIf="submitted && f.password.errors" class="alert alert-danger">
+              <div *ngIf="f.password.errors.required">Password is required</div>
+              <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+
+          <div class="form-group">
+            <button routerLink="/login" type="button" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- credits -->
+<div class="text-center">
+  <p>© 2019
+    <a href="http://netsolutions.com" target="_top">Net Solutions</a>. All Rights Reserved
+  </p>
+</div>
